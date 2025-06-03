@@ -1,16 +1,17 @@
 module.exports = {
     default: {
+        timeout: 30000,
         tags: process.env.npm_config_tags || "",
         formatOptions: {
             snippetInterface: "async-await"
         },
         paths: [
-            "src/features/**/**/*.feature"
+            "src/features/*.feature"
         ],
         dryRun: false,
         require: [
-            "src/step-definitions/**/**/*.ts",
-            "src/hooks/**/**/*.ts"
+            "src/stepDefinitions/*.ts",
+            "src/hooks/*.ts"
         ],
         requireModule: [
             "ts-node/register"

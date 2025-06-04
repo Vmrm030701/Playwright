@@ -1,7 +1,7 @@
 @checkout
 Feature: Proceso de compra
  
-@happypath @compra
+@happypath @Checkout
 Scenario: El usuario puede completar el proceso de compra hasta la confirmación
     Given que ha agregado productos al carrito
     And está en la página del carrito
